@@ -1,14 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
-
+import shirt from './reactshirt.jpg'
 
 function App() {
-  useEffect(()=> {
-    
-  })
+  
+  const [show, setShow] = useState(false)
+  
   return (
-    <div>
-      dasdfasdf
+    <div className="App" id={!show ? "" : "img"}>
+      {!show ? <button onClick={()=>setShow(true)}>Click Here</button> : <img src={shirt} />}
+      
     </div>
   );
 }

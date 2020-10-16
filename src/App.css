@@ -1,0 +1,38 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+.App {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#img {
+    background-color: #5dd5f0;
+}
+
+button {
+    width: 500px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: crimson;
+    border: none;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: tomato;
+    
+}
+
+button:focus {
+    outline: none;
+}
+img {
+    border-radius: 10px;
+    height: 100%;
+    
+}
